@@ -10,3 +10,29 @@
     text-align: center;
     color: white;
 }
+
+.boxes {
+    text-align: center;
+    display: inline;
+}
+
+.joke-box {
+    position:inherit;
+    float:left;
+    margin-left: 200px;
+}
+
+.number-box {
+    position:inherit;
+    float:right;
+    margin-right: 200px;
+}
+
+h2 {
+    font-size: 40px;
+    font-style: bold;
+}
+
+h2:hover {
+    background-color: red;
+}
