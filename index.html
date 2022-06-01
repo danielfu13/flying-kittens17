@@ -13,31 +13,36 @@
 <body>
     <header class="section has-background-link py-4 has-text-white">
         Random Conversation Starters!
-            <div class="tabs is-right is-medium has-text-white">
-                <ul>
-                    <li><a>Numbers</a></li>
-                    <li><a>Jokes</a></li>
-                </ul>
-            </div>
+        <div class="tabs is-right is-medium has-text-white">
+            <ul>
+                <li><a>Numbers</a></li>
+                <li><a>Jokes</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <nav class="main-background">
             <img src="./assets/jpg/ranger-4df6c1b6.png" alt="blue background">
-
-          <!--<div>Random Conversation Starters</div> (Title in the middle of picture) -->
+            <!--<div>Random Conversation Starters</div> (Title in the middle of picture) -->
         </nav>
-        <div>
-            <div class="box">
-                Jokes
+        <div class="boxes">
+            <div class="column box is-one-third joke-box" id="joke-btn">
+                <button class="button is-large is-primary joke-box" id="joke-btn">
+                    <h2>Have a laugh</h2>
+                </button>
             </div>
-            <div class="box">
-                Number Facts
+            <div class="column box is-one-third number-box" id="number-btn">
+                <button class="button is-large is-primary number-box" id="number-btn">
+                    <h2>Number fact</h2>
+                </button>
             </div>
         </div>
     </main>
-    
 
     <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
+
+
+
