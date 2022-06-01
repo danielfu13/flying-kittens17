@@ -1,9 +1,11 @@
 // variables from html page
+var jokeButton = document.getElementById('joke-btn');
+var numberButton = document.getElementById('number-btn');
 
-
-
-
-
+// universal variables
+var jokesOut;
+var numbersOut;
+var factOut;
 
 // numbers   to show up we will need to get the 'number' AND the 'text'
 const options = {
@@ -18,15 +20,14 @@ fetch('https://numbersapi.p.rapidapi.com/random/trivia?min=10&max=20&fragment=tr
     .then(response => response.json())
     .then(responseData => {
         console.log(responseData)
-        var numbers = responseData.number;
+        numbersOut = responseData.number;
         // console.log(responseData.number)
         // console.log("HEY HEY " + numbers);
 
-        var fact = responseData.text;
+        factOut = responseData.text;
         // console.log(fact);
-        console.log(numbers + " is " + fact);
+        // console.log(numbersOut + " is " + factOut);
     })
-
     .catch(err => console.error(err));
 
 
@@ -45,8 +46,31 @@ fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?type=single&format=json&idRang
     // .then(response => console.log(response))
     .then(responseData => {
         console.log(responseData)
-        var jokes = responseData.joke;
+        jokesOut = responseData.joke;
         // console.log(responseData.joke)
-        console.log(jokes);
+        // console.log(jokesOut);
     })
     .catch(err => console.error(err));
+
+
+// what happens when clicking on the joke button
+jokeButton.addEventListener("click", function () {
+    // console.log("hey it works" + jokesOut);
+    console.log(jokesOut);
+
+})
+
+
+// what happens when clicking on the number button
+numberButton.addEventListener("click", function () {
+    // console.log("Hey it works" + numbersOut + " is " + factOut);
+    console.log(numbersOut + " is " + factOut);
+})
+
+
+// make a display function to be called during button click one for numberbutton one for jokebutton
+
+
+// make a function to save results to local storage for each one
+
+// make a function to call saved results for each one
