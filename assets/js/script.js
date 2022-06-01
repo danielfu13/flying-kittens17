@@ -31,7 +31,6 @@ fetch('https://numbersapi.p.rapidapi.com/random/trivia?min=10&max=20&fragment=tr
 
 
 
-
 // joke api to show up we will need "joke" 
 const option = {
     method: 'GET',
