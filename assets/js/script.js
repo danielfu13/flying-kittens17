@@ -96,4 +96,5 @@ const modal = document.querySelector('.modal');
 //to close modal if background is clicked
 modalBackground.addEventListener('click', () => {
     modal.classList.remove('is-active');
+    document.location.reload(true);
 });
