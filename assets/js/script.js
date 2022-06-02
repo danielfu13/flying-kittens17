@@ -1,6 +1,9 @@
 // variables from html page
 var jokeButton = document.getElementById('joke-btn');
 var numberButton = document.getElementById('number-btn');
+var printJoke = document.getElementById('jokeModal');
+var printNumber = document.getElementById('numberModal');
+
 
 // universal variables
 var jokesOut;
@@ -57,14 +60,21 @@ fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?type=single&format=json&idRang
 jokeButton.addEventListener("click", function () {
     // console.log("hey it works" + jokesOut);
     console.log(jokesOut);
+    //indicates modal to open
+    modal.classList.add('is-active');
+    //print joke to modal
+    printJoke.textContent = jokesOut;
 
 })
-
 
 // what happens when clicking on the number button
 numberButton.addEventListener("click", function () {
     // console.log("Hey it works" + numbersOut + " is " + factOut);
     console.log(numbersOut + " is " + factOut);
+    //indicates modal to open
+    modal.classList.add('is-active');
+    //print number to modal
+    printNumber.textContent = numbersOut + " is " + factOut;
 })
 
 
@@ -75,3 +85,15 @@ numberButton.addEventListener("click", function () {
 
 
 // make a function to call saved results for each one
+
+
+//declaring variables for modal and modal background
+const jokeModal = document.querySelector('#joke-btn');
+const numberModal = document.querySelector('#number-btn');
+const modalBackground = document.querySelector('.modal-background');
+const modal = document.querySelector('.modal');
+
+//to close modal if background is clicked
+modalBackground.addEventListener('click', () => {
+    modal.classList.remove('is-active');
+});
