@@ -13,7 +13,7 @@
 
 *What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.*
 
-Go to  and the page should load and function properly. 
+Go to https://danielfu13.github.io/flying-kittens17/ and the page should load and function properly. 
 
 Alternatively, if you wish to download the files then you shoud do the following:
 Download the index.html file as well as the assets folder and the project should work and function properly. 
