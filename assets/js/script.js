@@ -68,9 +68,10 @@ numberButton.addEventListener("click", function () {
 })
 
 
-// make a display function to be called during button click one for numberbutton one for jokebutton
+// make a display function to be called during button click. one for numberbutton, one for jokebutton
 
 
 // make a function to save results to local storage for each one
+
 
 // make a function to call saved results for each one
