@@ -49,13 +49,13 @@
 }
 
 #joke-box:hover{
-    background-image: url(/assets/jpg/joke-background.jpeg);
+    background-image: url(../jpg/joke-background.jpeg);
     color: rgb(32, 30, 163);
     font-weight: bold;
 }
 
 #number-box:hover{
-    background-image: url(/assets/jpg/number-background.jpeg);
+    background-image: url(../jpg/number-background.jpeg);
     color: rgb(32, 30, 163);
     font-weight: bold;
 }
