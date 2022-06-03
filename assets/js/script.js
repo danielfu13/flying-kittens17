@@ -9,6 +9,7 @@ var printNumber = document.getElementById('numberModal');
 var jokesOut;
 var numbersOut;
 var factOut;
+var numberFactOut
 
 // numbers   to show up we will need to get the 'number' AND the 'text'
 const options = {
@@ -30,6 +31,7 @@ fetch('https://numbersapi.p.rapidapi.com/random/trivia?min=10&max=20&fragment=tr
         factOut = responseData.text;
         // console.log(fact);
         // console.log(numbersOut + " is " + factOut);
+        numberFactOut = numbersOut + "is" + factOut
     })
     .catch(err => console.error(err));
 
@@ -64,7 +66,7 @@ jokeButton.addEventListener("click", function () {
     modal.classList.add('is-active');
     //print joke to modal
     printJoke.textContent = jokesOut;
-
+    localStorage.setItem("funny starters", JSON.stringify(jokesOut));
 })
 
 // what happens when clicking on the number button
@@ -75,17 +77,22 @@ numberButton.addEventListener("click", function () {
     modal.classList.add('is-active');
     //print number to modal
     printNumber.textContent = numbersOut + " is " + factOut;
+    localStorage.setItem("number starters", JSON.stringify(numberFactOut));
 })
 
 
 // make a display function to be called during button click. one for numberbutton, one for jokebutton
 
-
 // make a function to save results to local storage for each one
 
 
 // make a function to call saved results for each one
-
+function init() {
+    jokesOut = JSON.parse(localStorage.getItem("funny starters"));
+}
+function init() {
+    numberFactOut = JSON.parse(localStorage.getItem("number starters"));
+}
 
 //declaring variables for modal and modal background
 const jokeModal = document.querySelector('#joke-btn');
