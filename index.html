@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="hero is-primary">
         <div class="hero-body">
             <div class="container">
@@ -18,48 +19,73 @@
                     Random Conversation Starters
                 </h1>
                 <h3 class="subtitle">
-                    Start an interesting conversations with jokes or number facts!
+                    Start an interesting conversation with jokes or number facts!
                 </h3>
         </div>
     </header>
+    <!-- Navbar NEED TO LINK TO CORRESPONDING AREAS, CAN WE MOVE ITEMS TO RIGHT? -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
+        <div class="navbar-end">
           <a class="navbar-item">
               Jokes
           </a>
           <a class="navbar-item">
               Numbers
           </a>
+          <a class="navbar-item">
+            Previous Conversation Prompts
+        </a>
         </div>
     </nav>
     <main>
+        <!-- Main background image -->
         <nav class="main-background">
             <img src="./assets/jpg/ranger-4df6c1b6.png" alt="blue background">
+            <!-- Text over the backgound image -->
             <h4 class="center-text">
-                Did you know that there are more stars in the universe than there are grains of sand in all of the beaches on Earth.
+                Did you know that there are more stars in the universe than there are grains of sand in all of the beaches on Earth?
             </h4> 
-            <h3 class="center-text2">Start an interesting conversations with jokes or number facts!</h3>
+            <h3 class="center-text2">Scroll down to find some more jokes or number facts!</h3>
         </nav>
-        <div class="boxes">
-            <div class="column box is-one-third joke-box" id="joke-btn">
-                <button class="button is-large is-primary joke-box" id="joke-btn">
-                    <h2>Have a laugh</h2>
-                </button>
+        <!-- Section with the button or joke options -->
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <!-- Setting up column properties for joke button -->
+                    <div class="column is-one-third box joke-box">
+                        <!-- Background image for joke button -->
+                        <img class="columnbg" src="./assets/jpg/joke-background.jpeg" alt="ha-ha laughing background">
+                        <!-- Joke button properties CAN THIS BE MIDDLE OF COLUMN? -->
+                        <button class="button is-large is-primary is-outlined is-rounded is-overlay" id="joke-btn">
+                        Share a laugh together
+                        </button>
+                    </div>
+                    <!-- The following column was placed to have space between the joke and number columns -->
+                    <div class="column"></div>
+                    <!-- Setting up column properties for number button -->
+                    <div class="column is-one-third box number-box">
+                        <!-- Background image for number button -->
+                        <img class="columnbg" src="./assets/jpg/number-background.jpeg" alt="123 number background">
+                        <!-- Number button properties CAN THIS BE MIDDLE OF COLUMN? -->
+                        <button class="button is-large is-primary is-outlined is-rounded is-overlay" id="number-btn">
+                        Share your knowledge
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="column box is-one-third number-box" id="number-btn">
-                <button class="button is-large is-primary number-box" id="number-btn">
-                    <h2>Number fact</h2>
-                </button>
-            </div>
-        </div>
+        </section>
+        <!-- Section displaying previous prompts -->
+        <section class="column is-full shaded">
+            <h3>Previous Conversation Prompts...</h3>
+        </section>
     </main>
-
-    <!-- modal -->
+    
+    <!-- Modal -->
     <div class="modal">
         <div class="modal-background"></div>
         <div class="modal-content has-background-white py-5 px-5">
-            <h3 class="modalText mb-6" id="jokeModal"></h3>
-            <h3 class="modalText mb-6" id="numberModal"></h3>
+            <h3 class="modalText mb-6 has-text-centered" id="jokeModal"></h3>
+            <h3 class="modalText mb-6 has-text-centered" id="numberModal"></h3>
         </div>
     </div>
 
