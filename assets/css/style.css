@@ -40,21 +40,31 @@
     position:inherit;
     float:left;
     margin-left: 200px;
+    background-color: rgb(205, 241, 237);
 }
 
 .number-box {
     position:inherit;
     float:right;
     margin-right: 200px;
+    background-color: rgb(205, 241, 237);
+}
+
+.shaded {
+    background-color: rgb(205, 241, 237);
+}
+
+.columnbg {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
 }
 
 h2 {
     font-size: 40px;
     font-style: bold;
-}
-
-h2:hover {
-    background-color: red;
 }
 
 @media screen and (max-width: 1500px) {
