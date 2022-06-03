@@ -1,6 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css";
 
-.main-background img{
+.main-background img {
     height: 600px;
     width: 100%;
     margin-bottom: 25px;
@@ -37,24 +37,25 @@
 }
 
 .joke-box {
-    position:inherit;
-    float:left;
+    position: inherit;
+    float: left;
     margin-left: 200px;
 }
 
 .number-box {
-    position:inherit;
-    float:right;
+    position: inherit;
+    float: right;
     margin-right: 200px;
 }
 
-#joke-box:hover{
+/*  */
+#joke-box:hover {
     background-image: url(../jpg/joke-background.jpeg);
     color: rgb(32, 30, 163);
     font-weight: bold;
 }
 
-#number-box:hover{
+#number-box:hover {
     background-image: url(../jpg/number-background.jpeg);
     color: rgb(32, 30, 163);
     font-weight: bold;
@@ -65,29 +66,29 @@ h2 {
     font-style: bold;
 }
 
-#prompt-history{
+#prompt-history {
     margin-top: 150px;
-    position:absolute;
+    position: absolute;
     text-align: center;
 }
 
 @media screen and (max-width: 1500px) {
-    .boxes{
-     text-align: center;
+    .boxes {
+        text-align: center;
     }
 
     .joke-box {
         position: relative;
-        display:flex;
-        margin-left:0%;
+        display: flex;
+        margin-left: 0%;
     }
 
     .number-box {
         position: relative;
-        display:flex;
-        margin-left:0%;
-        clear:both;
-        float:left;
+        display: flex;
+        margin-left: 0%;
+        clear: both;
+        float: left;
     }
 
     #prompt-history {
@@ -95,7 +96,8 @@ h2 {
     }
 }
 
-@media screen and (max-width: 1650px), screen and (max-height: 800px) {
+@media screen and (max-width: 1650px),
+screen and (max-height: 800px) {
     .center-text {
         font-size: 40px;
     }
@@ -105,7 +107,8 @@ h2 {
     }
 }
 
-@media screen and (max-width:950px), screen and (max-height: 770px) {
+@media screen and (max-width:950px),
+screen and (max-height: 770px) {
     .center-text {
         top: 55%;
         font-size: 35px;
@@ -116,7 +119,9 @@ h2 {
         font-size: 18px;
     }
 }
-@media screen and (max-width: 870px), screen and (max-height: 650px) {
+
+@media screen and (max-width: 870px),
+screen and (max-height: 650px) {
     .center-text {
         top: 60%;
         font-size: 30px;
@@ -132,7 +137,8 @@ h2 {
     }
 }
 
-@media screen and (max-width: 800px), screen and (max-height: 550px) {
+@media screen and (max-width: 800px),
+screen and (max-height: 550px) {
     .center-text {
         top: 70%;
         font-size: 20px;
@@ -147,11 +153,10 @@ h2 {
 @media screen and (max-height: 500px) {
     .center-text {
         top: 100%;
-       
+
     }
 
     .center-text2 {
         top: 120%;
     }
 }
-
