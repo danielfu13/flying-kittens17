@@ -40,31 +40,35 @@
     position:inherit;
     float:left;
     margin-left: 200px;
-    background-color: rgb(205, 241, 237);
 }
 
 .number-box {
     position:inherit;
     float:right;
     margin-right: 200px;
-    background-color: rgb(205, 241, 237);
 }
 
-.shaded {
-    background-color: rgb(205, 241, 237);
+#joke-box:hover{
+    background-image: url(/assets/jpg/joke-background.jpeg);
+    color: rgb(32, 30, 163);
+    font-weight: bold;
 }
 
-.columnbg {
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
+#number-box:hover{
+    background-image: url(/assets/jpg/number-background.jpeg);
+    color: rgb(32, 30, 163);
+    font-weight: bold;
 }
 
 h2 {
     font-size: 40px;
     font-style: bold;
+}
+
+#prompt-history{
+    margin-top: 150px;
+    position:absolute;
+    text-align: center;
 }
 
 @media screen and (max-width: 1500px) {
@@ -84,6 +88,10 @@ h2 {
         margin-left:0%;
         clear:both;
         float:left;
+    }
+
+    #prompt-history {
+        margin-top: 180px;
     }
 }
 
@@ -139,6 +147,7 @@ h2 {
 @media screen and (max-height: 500px) {
     .center-text {
         top: 100%;
+       
     }
 
     .center-text2 {
