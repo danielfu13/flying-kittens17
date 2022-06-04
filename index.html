@@ -11,7 +11,7 @@
 </head>
 
 <body>
-     <!-- Header -->
+    <!-- Header -->
     <header class="hero is-primary">
         <div class="hero-body">
             <div class="container">
@@ -21,41 +21,42 @@
                 <h3 class="subtitle">
                     Start an interesting conversations with jokes or number facts!
                 </h3>
-        </div>
+            </div>
     </header>
     <!-- Navbar -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-menu navbar-end">
-          <a class="navbar-item" href="#joke-box">
-              Jokes
-          </a>
-          <a class="navbar-item" href="#number-box">
-              Numbers
-          </a>
-          <a class="navbar-item" href="#prompt-history">
-            Previous Conversation Prompts
-        </a>
+            <a class="navbar-item" href="#joke-box">
+                Jokes
+            </a>
+            <a class="navbar-item" href="#number-box">
+                Numbers
+            </a>
+            <a class="navbar-item" href="#prompt-history">
+                Previous Conversation Prompts
+            </a>
         </div>
     </nav>
     <main>
-          <!-- Main background image -->
+        <!-- Main background image -->
         <nav class="main-background">
             <img src="./assets/jpg/ranger-4df6c1b6.png" alt="blue background">
             <h4 class="center-text">
-                Did you know that there are more stars in the universe than there are grains of sand in all of the beaches on Earth.
-            </h4> 
+                Did you know that there are more stars in the universe than there are grains of sand in all of the
+                beaches on Earth.
+            </h4>
             <h3 class="center-text2">Start an interesting conversations with jokes or number facts!</h3>
         </nav>
         <!-- Section with the button or joke options -->
         <section>
             <div class="boxes">
-                 <!-- Joke button properties -->
+                <!-- Joke button properties -->
                 <div class="column box is-one-third joke-box" id="joke-box">
                     <button class="button is-medium is-primary is-rounded is-overlay joke-box" id="joke-btn">
                         <h2>Have a laugh</h2>
                     </button>
                 </div>
-                 <!-- Number button properties -->
+                <!-- Number button properties -->
                 <div class="column box is-one-third number-box" id="number-box">
                     <button class="button is-medium is-primary is-rounded is-overlay number-box" id="number-btn">
                         <h2>Number Facts</h2>
@@ -63,12 +64,13 @@
                 </div>
             </div>
         </section>
-         <!-- Section displaying previous prompts -->
+        <!-- Section displaying previous prompts -->
         <section class="column is-full shaded prompt-history" id="prompt-history">
             <h3>Previous Conversation Prompts...</h3>
+            <div id="prompt-list"></div>
             <!-- display history here
                 <p></p> -->
-        </section> 
+        </section>
     </main>
     <!-- Modal -->
     <div class="modal">
@@ -82,6 +84,3 @@
 </body>
 
 </html>
-
-
-
