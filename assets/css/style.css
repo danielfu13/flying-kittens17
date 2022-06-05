@@ -73,31 +73,16 @@ h2 {
 }
 
 @media screen and (max-width: 1500px) {
-    .boxes {
-        text-align: center;
-    }
-
     .joke-box {
-        position: relative;
-        display: flex;
-        margin-left: 0%;
+        margin-left: 150px;
     }
 
     .number-box {
-        position: relative;
-        display: flex;
-        margin-left: 0%;
-        clear: both;
-        float: left;
-    }
-
-    #prompt-history {
-        margin-top: 180px;
+        margin-right: 150px;
     }
 }
 
-@media screen and (max-width: 1650px),
-screen and (max-height: 800px) {
+@media screen and (max-width: 1650px), screen and (max-height: 800px) {
     .center-text {
         font-size: 40px;
     }
@@ -107,8 +92,55 @@ screen and (max-height: 800px) {
     }
 }
 
-@media screen and (max-width:950px),
-screen and (max-height: 770px) {
+@media screen and (max-width: 1400px) {
+    .joke-box {
+        margin-left: 120px;
+    }
+
+    .number-box {
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .joke-box {
+        margin-left: 120px;
+    }
+
+    .number-box {
+        margin-right: 120px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .joke-box {
+        margin-left: 100px;
+    }
+
+    .number-box {
+        margin-right: 100px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .joke-box {
+        margin-left: 80px;
+    }
+
+    .number-box {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width:950px), screen and (max-height: 770px) {
     .center-text {
         top: 55%;
         font-size: 35px;
@@ -120,8 +152,7 @@ screen and (max-height: 770px) {
     }
 }
 
-@media screen and (max-width: 870px),
-screen and (max-height: 650px) {
+@media screen and (max-width: 870px), screen and (max-height: 650px) {
     .center-text {
         top: 60%;
         font-size: 30px;
@@ -137,8 +168,17 @@ screen and (max-height: 650px) {
     }
 }
 
-@media screen and (max-width: 800px),
-screen and (max-height: 550px) {
+@media screen and (max-width: 850px) {
+    .joke-box {
+        margin-left: 50px;
+    }
+
+    .number-box {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 800px), screen and (max-height: 550px) {
     .center-text {
         top: 70%;
         font-size: 20px;
@@ -150,10 +190,34 @@ screen and (max-height: 550px) {
     }
 }
 
+@media screen and (max-width: 610px) {
+    .boxes{
+     text-align: center;
+    }
+
+    .joke-box {
+        position: relative;
+        display:flex;
+        margin-left:0%;
+    }
+
+    .number-box {
+        position: relative;
+        display:flex;
+        margin-left:0%;
+        clear:both;
+        float:left;
+    }
+
+    #prompt-history {
+        margin-top: 180px;
+    }
+} 
+
 @media screen and (max-height: 500px) {
     .center-text {
         top: 100%;
-
+       
     }
 
     .center-text2 {
