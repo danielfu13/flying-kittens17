@@ -24,11 +24,19 @@ Download the index.html file as well as the assets folder and the project should
 
 Upon entry to the site you will be presented with the option to select a joke or a fact. Once you have clicked on the appropriate button a popup will appear with what was requested. If you wish to see another one or choose the other button, close the popup and click the appropriate button.
 
-Below is a screenshot of what the website should look like upon entry to the site.  In the images folder within assets there is 2 more screenshots on what the site looks like after you have chosen either a joke or a fact. 
+Below is two screenshots of what the website should look like upon entry to the site.  In the images folder within assets there is 2 more screenshots on what the site looks like after you have chosen either a joke or a fact. 
 
 
-![alt text](assets/images//)
+![alt text](assets/images//startpage.png)
+![alt text](assets/images//page2.png)
 
 
 ## Credits
-We used https://rapidapi.com/divad12/api/numbers-1/ for the Number Facts API and documentation. We used https://rapidapi.com/Sv443/api/jokeapi-v2/ and https://v2.jokeapi.dev/ for the Joke API and documentation. We used w3Schools to learn how to make a modal. We used https://bulma.io/ for our CSS framework, and for documentation on how to implement it.
+We used https://rapidapi.com/divad12/api/numbers-1/ for the Number Facts API and documentation. We used https://rapidapi.com/Sv443/api/jokeapi-v2/ and https://v2.jokeapi.dev/ for the Joke API and documentation. We used https://bulma.io/ for our CSS framework, and for documentation on how to implement it. We used w3Schools and MDN Docs for assistance with troubleshooting, including learning how to make and populate a modal.
+
+
+*Project Group Members:* 
+Swaathy Selva
+Stephen Fudge
+Daniel Fu
+Brendan Monroe
