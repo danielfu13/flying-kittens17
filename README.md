@@ -36,7 +36,7 @@ We used https://rapidapi.com/divad12/api/numbers-1/ for the Number Facts API and
 
 
 *Project Group Members:* 
-Swaathy Selva
+Swaathy Selvagnanam
 Stephen Fudge
 Daniel Fu
 Brendan Monroe
