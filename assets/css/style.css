@@ -48,7 +48,6 @@
     margin-right: 200px;
 }
 
-/*  */
 #joke-box:hover {
     background-image: url(../jpg/joke-background.jpeg);
     color: rgb(32, 30, 163);
@@ -116,7 +115,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
     .joke-box {
         margin-left: 100px;
     }
